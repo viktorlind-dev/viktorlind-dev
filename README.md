@@ -5,24 +5,23 @@ Focusing on Python CLI runtimes, packaging architecture, and deterministic depen
 
 ---
 
-### 🏛️ Upstream Contributions & Verified Fixes (Wall of Proof)
+### 🏛️ Open Source Work & Contributions
 
-A public ledger of upstream open-source bug fixes and invariant patches:
+A ledger of upstream open-source bug fixes and packaging patches:
 
-| Project | Domain | PR / Tracking | Status | Invariant Verified |
-|---|---|---|---|---|
-| **[python-poetry/poetry](https://github.com/python-poetry/poetry)** | Packaging & CLI | [PR #11151](https://github.com/python-poetry/poetry/pull/11151) | `In Review` | Config setting name attribution & integer validation |
-| **[pallets/click](https://github.com/pallets/click)** | CLI Parser | Local Suite | `Validated` | Option flag parsing & parameter hydration |
-| **[psf/requests](https://github.com/psf/requests)** | HTTP Client | Local Suite | `Validated` | Connection pool lifecycle & header normalization |
-
----
-
-### 🛠️ Toolchain & Engineering Blueprint
-
-I follow a strict **green-first, zero-regression** contribution workflow:
-- **Local Validation**: Full test suite execution + `ruff check` + `ruff format` prior to first push.
-- **Diff Minimization**: Surgical 10–30 line edits to eliminate maintainer review fatigue.
-- **Pre-Flight Invariant Airlock**: Validated with [ZeroSlop™ CI](https://github.com/marketplace/actions/zeroslop-by-ribbsaeter-systems) — automated AST invariant checking and diff minimization on GitHub Marketplace.
+| Project | Domain | Focus Area | Status |
+|---|---|---|---|
+| **[python-poetry/poetry](https://github.com/python-poetry/poetry)** | Packaging & CLI | Config key attribution & numeric validation | Active |
+| **[pallets/click](https://github.com/pallets/click)** | CLI Parser | Parameter parsing & option flag evaluation | Contributor |
+| **[psf/requests](https://github.com/psf/requests)** | HTTP Client | Connection pool lifecycle & adapter resilience | Contributor |
 
 ---
-*Open to collaborating on CLI tooling, packaging standards, and performance optimization.*
+
+### 🛠️ Toolchain & Practices
+
+- **Strict Test Coverage**: Local execution of unit and integration suites prior to review.
+- **Minimal Diffs**: Focused, surgical patches that simplify code review and reduce regressions.
+- **Code Hygiene**: Automated linting and formatting via Ruff and pre-commit hooks.
+
+---
+*Python • Packaging • CLI Internals • Linux*
